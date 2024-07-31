@@ -1,0 +1,125 @@
+/* Importing the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Universal selector to apply basic styling to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Applying the Poppins font */
+}
+
+/* Body styling */
+body {
+    background-color: rgb(232, 238, 238); /* Light grey background color */
+}
+
+/* Container styling for centering content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Top margin for spacing */
+}
+
+/* Styling for the input container */
+.input-container {
+    width: 100%;
+    max-width: 500px; /* Maximum width for larger screens */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Styling for input fields within the input container */
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 12px; /* Padding inside input fields */
+    margin-block: 12px; /* Vertical margin between inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+}
+
+/* Styling for text input field */
+.input-container input[type="text"] {
+    width: 70%; /* Width of text input field */
+}
+
+/* Styling for button input */
+.input-container input[type="button"] {
+    background-color: #369036; /* Dark green background */
+    color: #eae1e1; /* Light color for button text */
+    font-weight: 700; /* Bold text */
+    margin-left: 8px; /* Margin to the left of the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 12px 24px; /* Padding inside the button */
+}
+
+/* Hover effect for button input */
+.input-container input[type="button"]:hover {
+    background-color: #58a058; /* Lighter green on hover */
+}
+
+/* Styling for the unordered list */
+ul {
+    width: 70%; /* Width of the list */
+    max-width: 450px; /* Maximum width for larger screens */
+    /* Uncommented properties for centering content if needed */
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+/* Styling for list items in the unordered list */
+ul li {
+    list-style-type: none; /* Removes default list bullets */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-block-end: 12px; /* Margin below each list item */
+    border-radius: 8px; /* Rounded corners */
+    border: 0.125px solid #a19f9f; /* Light border color */
+    padding: 6px 12px; /* Padding inside list items */
+    background-color: #ffffff; /* White background for list items */
+    display: flex; /* Flexbox layout for list items */
+    align-items: center; /* Center-align items vertically */
+    justify-content: space-between; /* Space between content and buttons */
+    transition: background-color 0.5s; /* Smooth background color transition */
+}
+
+/* Hover effect for list items */
+ul li:hover {
+    background-color: #cbcaca; /* Light grey background on hover */
+}
+
+/* Styling for paragraph inside list items */
+ul li p {
+    flex-grow: 1; /* Allows paragraph to grow and fill space */
+    padding: 2px; /* Padding inside the paragraph */
+}
+
+/* General button styling */
+.btn {
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    font-size: 16px; /* Font size for buttons */
+    background: none; /* No background for buttons */
+    font-weight: 600; /* Semi-bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 8px; /* Padding inside buttons */
+}
+
+/* Specific styling for delete button */
+.deleteBtn {
+    color: #ff0000; /* Red color for delete button */
+}
+
+/* Specific styling for edit button */
+.editBtn {
+    color: #008000; /* Green color for edit button */
+}
+
+/* Styling for checkbox inside list items */
+.checkbox {
+    margin-right: 12px; /* Space between checkbox and text */
+}
